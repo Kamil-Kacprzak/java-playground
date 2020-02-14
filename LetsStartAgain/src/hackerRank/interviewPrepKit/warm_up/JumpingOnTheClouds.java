@@ -8,25 +8,26 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Sock_Merchant {
+public class JumpingOnTheClouds {
 
-    // Complete the sockMerchant function below.
-    static int sockMerchant(int n, int[] ar) {
-        int result = 0;
-        HashMap<Integer,Integer> hmSocks = new HashMap<Integer,Integer>();
+    // Complete the jumpingOnClouds function below.
+    static int jumpingOnClouds(int[] c) {
+    	int result = 0;
+    	
+    	for(int i =0; i< c.length-1;) {
+    		if(i+2 < c.length && c[i+2] == 0) {
+    			i +=2;
+    			result++;
+    		}else if (c[i+1] == 0) {
+    			i++;
+    			result++;
+    		}else {
+    			return 0;
+    		}
+    	}
+    	
+    	return result;
 
-        for (int i : ar){
-            if(hmSocks.get(i) == null){
-                hmSocks.put(i,1);
-            }else{
-                hmSocks.put(i,hmSocks.get(i)+1);
-            }
-        }
-        for (int i : hmSocks.values()){
-            result += i/2;
-        }
-
-        return result;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
@@ -37,17 +38,17 @@ public class Sock_Merchant {
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        int[] ar = new int[n];
+        int[] c = new int[n];
 
-        String[] arItems = scanner.nextLine().split(" ");
+        String[] cItems = scanner.nextLine().split(" ");
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
         for (int i = 0; i < n; i++) {
-            int arItem = Integer.parseInt(arItems[i]);
-            ar[i] = arItem;
+            int cItem = Integer.parseInt(cItems[i]);
+            c[i] = cItem;
         }
 
-        int result = sockMerchant(n, ar);
+        int result = jumpingOnClouds(c);
 
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
@@ -57,4 +58,3 @@ public class Sock_Merchant {
         scanner.close();
     }
 }
-
