@@ -1,17 +1,17 @@
 /**
  * Description: Following project is a quick jump into semantic of Java SE and git.
  */
-package Begining;
+package begining;
 
 /**
- * @author Bonobo
+ * @author Bonob0
  *
  * Script date: Dec 9, 2019
  */
 public class LetsStart_Beg {
 	public static void main(String[] args) {
 		System.out.println("Hello again ;]");
-				
+		
 	}
 
 }
