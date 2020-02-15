@@ -9,18 +9,22 @@ public class Solution {
 	private static final int EVEN = 0;
 	private static final int ODD  = 1;
 	
-	private static String[] evenOddStringSeparator(String s) {
-		String[] results = new String[] {"",""};
+	private static StringBuilder[] evenOddStringSeparator(String s) {
+		StringBuilder[] results = new StringBuilder[2];
+		for(int i = 0; i< results.length;i++) {
+			results[i] = new StringBuilder();
+		}
+
 		char 	 charAt;
 		
 		for (int i = 0; i<s.toCharArray().length;i++) {
 			
 			if ( i%2 == 0) {
 				charAt = s.charAt(i);
-				results[EVEN] = results[EVEN].concat(String.valueOf(charAt));
+				results[EVEN].append(charAt);
 			}else {
 				charAt = s.charAt(i);
-				results[ODD] = results[ODD].concat(String.valueOf(charAt));
+				results[ODD].append(charAt);
 			}	
 		}
 		return results;
@@ -36,7 +40,7 @@ public class Solution {
 		   input[i] = scan.nextLine();
 	    }
 	    
-	    String[] output;
+	    StringBuilder[] output;
 	    
 	    for (String s : input) {
 	    	output = evenOddStringSeparator(s);
