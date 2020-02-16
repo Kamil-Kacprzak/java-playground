@@ -1,4 +1,4 @@
-package hackerRank.thirtyDaysChellange.day_3;
+package hackerrank.thirtydayschellange.day5;
 
 import java.io.*;
 import java.math.*;
@@ -17,17 +17,10 @@ public class Solution {
     public static void main(String[] args) {
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
         scanner.close();
-
-        if(n%2 != 0){
-            System.out.print("Weird");
-        }else if(n >= 2 && n <= 5){
-             System.out.print("Not Weird");
-        }else if(n >= 6 && n <= 20){
-             System.out.print("Weird");
-        }else{
-            System.out.print("Not Weird");
+        
+        for (int i=1; i<=10; i++) {
+        	System.out.println(n+" x "+i+" = "+i*n);
         }
     }
 }

@@ -1,4 +1,4 @@
-package hackerRank.thirtyDaysChellange.day_1;
+package hackerrank.thirtydayschellange.day1;
 
 import java.io.*;
 import java.util.*;
