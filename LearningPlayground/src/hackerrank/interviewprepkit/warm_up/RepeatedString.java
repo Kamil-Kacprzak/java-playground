@@ -11,7 +11,7 @@ import java.util.regex.*;
 public class RepeatedString {
 
     // Complete the repeatedString function below.
-    static long repeatedString(String s, long n) {		
+    public static long repeatedString(String s, long n) {		
 		long contains = n/s.length();		
 		long counter = countLetters(s,s.length(),'a');;
 		long fix = countLetters(s,n%s.length(),'a');
@@ -20,7 +20,7 @@ public class RepeatedString {
     	return result;
     }
 
-    static long countLetters(String s, long length, char letterToFind) {
+    public static long countLetters(String s, long length, char letterToFind) {
     	long count = 0;
     	for (int i = 0 ; i < length ; i++) {
     		if(s.charAt(i) == letterToFind) {

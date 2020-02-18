@@ -11,7 +11,7 @@ import java.util.regex.*;
 public class SockMerchant {
 
     // Complete the sockMerchant function below.
-    static int sockMerchant(int n, int[] ar) {
+    public static int sockMerchant(int n, int[] ar) {
         int result = 0;
         HashMap<Integer,Integer> hmSocks = new HashMap<Integer,Integer>();
 

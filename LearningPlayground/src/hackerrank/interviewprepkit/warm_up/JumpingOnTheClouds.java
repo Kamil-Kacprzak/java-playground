@@ -11,7 +11,7 @@ import java.util.regex.*;
 public class JumpingOnTheClouds {
 
     // Complete the jumpingOnClouds function below.
-    static int jumpingOnClouds(int[] c) {
+	public static int jumpingOnClouds(int[] c) {
     	int result = 0;
     	
     	for(int i =0; i< c.length-1;) {

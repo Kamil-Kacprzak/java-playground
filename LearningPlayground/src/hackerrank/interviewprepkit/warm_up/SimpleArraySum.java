@@ -9,12 +9,12 @@ import java.util.regex.*;
 public class SimpleArraySum {
 
 
-    static int solveMeFirst(int a, int b) {
+	public static int solveMeFirst(int a, int b) {
       	// Hint: Type return a+b; below 
         return a+b;
    }
 
- public static void main(String[] args) {
+	public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int a;
         a = in.nextInt();
