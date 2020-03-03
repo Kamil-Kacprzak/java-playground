@@ -34,7 +34,11 @@ public class Testing {
 		
 		// Declare and initialize array separately in short syntax - not allowed
 		int[] intArray;
-		intArray = new int[] {3,2,1,0};
+		intArray = new int[] {3,2,1,0}; // in short: intArray = {3,2,1,0};
+		
+		
+		int[] arr = new int[5];
+		System.out.println("No initialization - value: "+arr[2]);
 		
 		Arrays.sort(intArray);
 		System.out.println("Sorted array: "+Arrays.toString(intArray)); // reference to object: ntArray.toString()
@@ -46,14 +50,14 @@ public class Testing {
 		/*
 		 * %d		- integers
 		 * %f		- floating points
-		 * %n		- new line		  
+		 * %n		- new line	
+		 * %s %S	- String
 		 * %%		- %
 		 * %x or %X - int HEX
 		 * %o		- int OCT
 		 * %e %E	- Scientific notation
 		 * %g		- Causes Formatter to use either %f or %e, whichever is shorter
 		 * %t %T	- Time and Date
-		 * %s %S	- String
 		 * %h %H	- Hashcode of argument
 		 * %c		- Character
 		 * %b %B	- boolean
@@ -105,7 +109,7 @@ public class Testing {
 			System.out.println(e.getMessage());
 		}finally {
 			System.out.println("Noting new in here so I through an exception");
-			System.out.println("Key note: It's thrown in another Thread");
+			System.out.println("Key note: It's thrown in another Thread so after multiple runs - the order of lines may differ");
 		}
 		
 	}

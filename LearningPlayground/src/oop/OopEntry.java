@@ -1,7 +1,7 @@
 package oop;
 
 
-public class OopEntry { // only public, abstract and final modifiers allowed 
+public class OopEntry { // only public (or no modifier), abstract and final modifiers allowed 
 						// in general class
 /*
  * 			Access Levels
@@ -10,7 +10,7 @@ Modifier	Class	Package	Subclass	World	|
 -----------|------------------------------------|
 public	   |  Y			Y		Y			Y	|
 protected  |  Y			Y		Y			N	|
-no modifier|  Y 		Y		N			N	|
+no modifier|  Y 		Y		N			N	| // not used for fields and methods within interface
 private	   |  Y			N		N			N	|
 ------------------------------------------------|
 
