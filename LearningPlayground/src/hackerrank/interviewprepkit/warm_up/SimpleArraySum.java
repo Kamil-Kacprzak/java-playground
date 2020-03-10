@@ -23,5 +23,6 @@ public class SimpleArraySum {
         int sum;
         sum = solveMeFirst(a, b);
         System.out.println(sum);
+        in.close();
    }
 }

@@ -1,6 +1,6 @@
 package oop;
 
-public class SubModifierCheckInPackage extends TestingClass{
+public class SubModifierCheckInPackage extends TestingAccessClass{
 
 	public SubModifierCheckInPackage(){
 		printData();

@@ -1,5 +1,8 @@
 package oop;
 
+import java.util.Scanner;
+
+import beginning.FileTesting;
 
 public class OopEntry { // only public (or no modifier), abstract and final modifiers allowed 
 						// in general class
@@ -23,7 +26,31 @@ private	   |  Y			N		N			N	|
 	// it's own constructor
 	public static void main(String[] args) {
 		// new OopEntry();
-		new TestingClass();	
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Choose your option:\n1 - TestingClass entry\n2 - Abstract & Interface\n0 - Exit");
+		System.out.print("Your input: ");
+		int option = scan.nextInt();
+		scan.nextLine();
+		switch (option)
+		{
+			case 0 : 
+				System.out.println("Thank you for using our services. See you soon.");
+				break;
+			case 1: 
+				new TestingAccessClass();	
+				break;
+			case 2:
+				IfceAbstractClassUser user = new IfceAbstractClassUser();
+				user.calculateNumber();
+				user.returnNumber();
+				user.someDefaultMethod();
+				AbstractClass.someStaticMethod();
+				TrialInterface.someStaticMethod();
+				break;
+			default:
+				System.out.println("Wrong number.Shutting down.");
+		}
+		scan.close();		
 	}
 
 //	OopEntry(){

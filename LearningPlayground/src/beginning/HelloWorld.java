@@ -1,7 +1,7 @@
 /**
  * Description: Following project is a quick jump into semantic of Java SE and git.
  */
-package begining;
+package beginning;
 
 /**
  * @author Bonob0
