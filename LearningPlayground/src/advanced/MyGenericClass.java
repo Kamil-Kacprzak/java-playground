@@ -3,7 +3,8 @@ package advanced;
 import java.lang.reflect.Type;
 
 public class MyGenericClass<T extends Number> 
-					implements FunctionalIfce{
+					// implements FunctionalIfce /*Only for Overriding method without lambda */
+						{
 	
 	private T value;
 	// Lambda implementation of interface
