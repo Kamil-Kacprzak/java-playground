@@ -12,11 +12,11 @@ public class TestingAccessClass {
 	protected String protectedString;
 	public String publicString;
 	String noModifierString; 
-	// Arraylist -  better when there is a lot of searching especialy by index
+	// Arraylist -  better when there is a lot of searching especially by index
 	// LinkedList -better for constant adding/removing items
-	// Both lists can take only objects as parameteres
+	// Both lists can take only objects as parameters
 	// By doing List<Integer> ll = new LinkedList<>(); - we only assign list implementation from linked list to out object	
-	//		Implementation of other interfaces like queue or deque is not implemented in object
+	//		Implementation of other interfaces like queue or dequeue is not implemented in object
 	List<Integer> al = new ArrayList<>();
 	LinkedList<List<Integer>> llOfLists = new LinkedList<>();
 	

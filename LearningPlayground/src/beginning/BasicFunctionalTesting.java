@@ -13,7 +13,7 @@ public class BasicFunctionalTesting {
 		scan.nextLine();
 		switch (option)
 		{
-			case 0 : 
+			case 0 :   
 				System.out.println("Thank you for using our services. See you soon.");
 				break;
 			case 1: 
@@ -59,7 +59,7 @@ public class BasicFunctionalTesting {
 		System.out.println("No initialization - value: "+arr[2]);
 
 		Arrays.sort(intArray);
-		System.out.println("Sorted array: "+Arrays.toString(intArray)); // reference to object: ntArray.toString()
+		System.out.println("Sorted array: "+Arrays.toString(intArray)); // reference to object: intArray.toString()
 		System.out.println(intArray[2]);
 
 		//Escape sequence + string control with format specifiers

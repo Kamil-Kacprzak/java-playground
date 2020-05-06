@@ -16,6 +16,30 @@ public class FileTesting {
 		copyAndDelete();	
 	}
 	
+	private void printFile() {
+		try {
+			URL fileURL = this.getClass().getResource("input.txt");
+			this.in = new BufferedReader(new FileReader(fileURL.getPath()));
+			this.line = in.readLine();
+			while(line != null) {
+				System.out.println(line);
+				line = in.readLine();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				if(in != null) {
+					in.close();					
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
 	private void copyAndDelete() {
 		File fWritten = new File("./src/beginning","output.txt");
 		File fRenamed = new File("./src/beginning","Renamed_Version.txt");
@@ -38,27 +62,4 @@ public class FileTesting {
 		}
 	}
 
-	private void printFile() {
-		try {
-			URL fileURL = this.getClass().getResource("input.txt");
-			this.in = new BufferedReader(new FileReader(fileURL.getPath()));
-			this.line = in.readLine();
-			while(line != null) {
-				System.out.println(line);
-				line = in.readLine();
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}finally{
-				try {
-					if(in != null) {
-						in.close();					
-					}
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-	}
+}
