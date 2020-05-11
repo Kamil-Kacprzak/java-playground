@@ -10,20 +10,19 @@ public class FileTesting {
 	private BufferedReader in;
 	
 	public FileTesting() {
-		printFile();
 		this.line = "That's a new line from FileTesting class.";
+		printFile();
 		writeToFile(line);
-		copyAndDelete();	
+		copyAndDelete();
 	}
 	
 	private void printFile() {
 		try {
 			URL fileURL = this.getClass().getResource("input.txt");
 			this.in = new BufferedReader(new FileReader(fileURL.getPath()));
-			this.line = in.readLine();
-			while(line != null) {
-				System.out.println(line);
+			while(in.readLine() != null) {
 				line = in.readLine();
+				System.out.println(line);
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
