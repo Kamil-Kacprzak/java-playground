@@ -1,4 +1,0 @@
-That's a new line from FileTesting class.
-That's a new line from FileTesting class.
-That's a new line from FileTesting class.
-That's a new line from FileTesting class.
