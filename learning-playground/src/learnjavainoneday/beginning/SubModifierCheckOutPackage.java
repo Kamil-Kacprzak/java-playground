@@ -1,7 +1,6 @@
-package beginning;
+package learnjavainoneday.beginning;
 
-// Main part of the program is located in this package where testing of modifiers is more detailed
-import oop.TestingAccessClass;
+import learnjavainoneday.intermediate.TestingAccessClass;
 
 public class SubModifierCheckOutPackage extends TestingAccessClass{
 

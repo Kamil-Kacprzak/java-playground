@@ -1,7 +1,8 @@
+package learnjavainoneday.beginning;
 /**
  * Description: Following project is a quick jump into semantic of Java SE and git.
  */
-package beginning;
+
 
 /**
  * @author Bonob0

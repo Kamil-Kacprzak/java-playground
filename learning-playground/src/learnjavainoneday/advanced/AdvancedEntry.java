@@ -1,4 +1,4 @@
-package advanced;
+package learnjavainoneday.advanced;
 
 public class AdvancedEntry {
 
@@ -6,6 +6,8 @@ public class AdvancedEntry {
 		MyGenericClass<Integer>  generic = new MyGenericClass<>();
 		generic.setValue(5);
 		System.out.println(generic.toString());
+		
+		
 		
 	}
 

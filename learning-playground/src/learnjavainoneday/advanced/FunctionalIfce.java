@@ -1,4 +1,4 @@
-package advanced;
+package learnjavainoneday.advanced;
 
 import java.lang.reflect.Type;
 

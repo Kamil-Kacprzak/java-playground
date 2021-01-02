@@ -1,4 +1,4 @@
-package oop;
+package learnjavainoneday.intermediate;
 
 public interface TrialInterface {
 

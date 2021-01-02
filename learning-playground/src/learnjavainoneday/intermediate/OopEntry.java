@@ -1,8 +1,8 @@
-package oop;
+package learnjavainoneday.intermediate;
 
 import java.util.Scanner;
 
-import beginning.FileTesting;
+import learnjavainoneday.beginning.FileTesting;
 
 public class OopEntry { // only public (or no modifier), abstract and final modifiers allowed 
 						// in general class

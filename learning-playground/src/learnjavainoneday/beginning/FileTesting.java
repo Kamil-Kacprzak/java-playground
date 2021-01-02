@@ -1,4 +1,4 @@
-package beginning;
+package learnjavainoneday.beginning;
 
 import java.util.*;
 import java.io.*;
