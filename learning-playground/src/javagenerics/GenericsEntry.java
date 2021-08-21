@@ -31,8 +31,8 @@ public class GenericsEntry {
 		superNums.add(1);
 		superNums.add(2);
 		/* 
-		 * only exception when reading objects because
-		 * it's super type to all reference types
+		 * only exception when reading "Object"s because
+		 * it's a super type to all reference types
 		*/
 		List<Object> objs = Arrays.<Object>asList(1, "two");
 		superNums = objs;
@@ -56,7 +56,7 @@ public class GenericsEntry {
 		// extendedNums.add(5); // illegal operation - can't guarantee a type of list
 
 		/*
-		 * Only exception when adding null
+		 * Only exception is for adding null
 		 * it belongs to all reference types
 		 */
 		extendedNums.add(null);
