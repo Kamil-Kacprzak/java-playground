@@ -2,9 +2,9 @@ package learnjavainoneday.beginning;
 
 import learnjavainoneday.intermediate.TestingAccessClass;
 
-public class SubModifierCheckOutPackage extends TestingAccessClass{
+public class SubModifierCheckOutOfPackage extends TestingAccessClass{
 
-	public SubModifierCheckOutPackage(){
+	public SubModifierCheckOutOfPackage(){
 		super();
 		printData();
 	}

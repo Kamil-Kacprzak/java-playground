@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import learnjavainoneday.beginning.SubModifierCheckOutPackage;
+import learnjavainoneday.beginning.SubModifierCheckOutOfPackage;
 
 public class TestingAccessClass {
 	
@@ -12,10 +12,10 @@ public class TestingAccessClass {
 	protected String protectedString;
 	public String publicString;
 	String noModifierString; 
-	// Arraylist -  better when there is a lot of searching especially by index
+	// ArrayList -  better when there is a lot of searching especially by index
 	// LinkedList -better for constant adding/removing items
 	// Both lists can take only objects as parameters
-	// By doing List<Integer> ll = new LinkedList<>(); - we only assign list implementation from linked list to out object	
+	// By doing List<Integer> ll = new LinkedList<>(); - we only assign list implementation from linked list to our object	
 	//		Implementation of other interfaces like queue or dequeue is not implemented in object
 	List<Integer> al = new ArrayList<>();
 	LinkedList<List<Integer>> llOfLists = new LinkedList<>();
@@ -33,7 +33,7 @@ public class TestingAccessClass {
 		//Ensures that recursion won't occur
 		if(isCallingfirst) {
 			isCallingfirst = false;
-			new SubModifierCheckOutPackage();
+			new SubModifierCheckOutOfPackage();
 			new SubModifierCheckInPackage();
 		}
 	}	

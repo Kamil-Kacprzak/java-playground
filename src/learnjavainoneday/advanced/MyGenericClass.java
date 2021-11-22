@@ -26,7 +26,7 @@ public class MyGenericClass<T extends Number>
 		return "The value is equal: "+value+" and it's type: "+fIfce.getType();
 	}
 	
-	//Standard implementation ###  Lambda implementation above
+	//Standard implementation. Lambda implementation is placed above.
 	/*
 	@Override
 	public Type getType() {

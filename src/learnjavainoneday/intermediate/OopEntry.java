@@ -20,8 +20,8 @@ private	   |  Y			N		N			N	|
  */
 
 	
-	// BAD EXAMPLE 
-	// Mixing logic with program entry
+	// !!!BAD EXAMPLE!!! 
+	// Mixing logic with program entry on Line 28(new OopEntry();
 	// Using class with main and calling new object with
 	// it's own constructor
 	public static void main(String[] args) {

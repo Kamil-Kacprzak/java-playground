@@ -7,7 +7,7 @@ public class BeginningEntry {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Choose your option:\n1 - In line basic testing from functions\n2 - File testing\n0 - Exit");
+		System.out.println("Choose your option:\n1 - Inline basic testing from functions\n2 - File testing\n0 - Exit");
 		System.out.print("Your input: ");
 		int option = scan.nextInt();
 		scan.nextLine();
@@ -33,9 +33,9 @@ public class BeginningEntry {
 	private static int playingWithFormat() {
 
 		int n = 0;
-		// Naming suffixes
-		float f = 20.5F;
-		long l = 20000000000L;
+		// Naming suffixes F/L or f/l
+		float f = 20.5F; 
+		long l = 20_000_000_000L; // without suffix, value is read as int - out of range 
 		//Output:20000000000
 
 
@@ -51,14 +51,15 @@ public class BeginningEntry {
 		n = 0;
 
 		// Declare and initialize array separately in short syntax - not allowed
+		int[] shortVersion = {3,2,1,0};
 		int[] intArray;
-		intArray = new int[] {3,2,1,0}; // in short: intArray = {3,2,1,0};
+		intArray = new int[] {3,2,1,0}; 
 
-
+		// Without value filled with default value of a type
 		int[] arr = new int[5];
-		System.out.println("No initialization - value: "+arr[2]);
+		System.out.println("No initialization - value = "+arr[2]);
 
-		Arrays.sort(intArray);
+		Arrays.sort(intArray); 
 		System.out.println("Sorted array: "+Arrays.toString(intArray)); // reference to object: intArray.toString()
 		System.out.println(intArray[2]);
 
@@ -66,9 +67,14 @@ public class BeginningEntry {
 		System.out.println("\t tab i enter\n a teraz \\\"");
 		System.out.printf("The answer for %.3f divided by %d is %.2f.\n", 5.45, 3, 5.45/3);
 		/*
+		 * Flags:
+		 * %.x - x number of decimal places
+		 * %x  - The minimal width of output with heading spaces
+		 * %,  - Thousands separator
+		 * Converters:
 		 * %d		- integers
 		 * %f		- floating points
-		 * %n		- new line	
+		 * %n		- new line	(\n alternative)
 		 * %s %S	- String
 		 * %%		- %
 		 * %x or %X - int HEX
@@ -81,7 +87,7 @@ public class BeginningEntry {
 		 * %b %B	- boolean
 		 * %a %A	- Floating point HEX
 		 */
-		System.out.printf("String width 20,5 decimal places with \"thousands\" separator: %,20.5f\n",1200000.34);
+		System.out.printf("String width 20,5 decimal places with \"thousands\" separator:%,20.5f\n",1200000.34);
 
 		// input with Scanner
 		Scanner scan = new Scanner(System.in);
@@ -93,9 +99,9 @@ public class BeginningEntry {
 	}
 
 	private static int playingWithFlow(int n) {
-		if ( n != 0 && 100/n <= 100) { //logical operator
-			if(n >1 & n< 5) {			// bitwise operator - evaluate both side 
-				// and perform AND operation on bits
+		if ( n != 0 && 100/n <= 100) {  //logical operator (with no logic, lol)
+			if(n >1 & n< 5) {			// bitwise operator - evaluate both sides (true or false) 
+										// and performs AND operation on bits
 				System.out.print("n is greater than 1 and smaller than 5.");				
 			}else {
 				switch(n) {
@@ -108,7 +114,7 @@ public class BeginningEntry {
 				}								
 			}
 		}
-		return n;
+		return n; 
 	}
 
 	private static void loopingAndException(int n) {
@@ -121,7 +127,7 @@ public class BeginningEntry {
 			}
 		}catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println("No invalid index no message: "+e.getMessage());
-			System.out.println("But I can show this:");
+			System.out.println("But I can show stack trace:");
 			e.printStackTrace();
 		}catch(Exception e) {
 			System.out.println(e.getMessage());

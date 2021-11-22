@@ -1,18 +1,13 @@
 package learnjavainoneday.beginning;
-/**
- * Description: Following project is a quick jump into semantic of Java SE and git.
- */
-
 
 /**
- * @author Bonob0
- *
- * Script date: Dec 9, 2019
+ * Description: Following project is a quick jump into semantic of Java SE and Git.
  */
+
 public class HelloWorld {
 	
 	public static void main(String[] args) {
-		System.out.println("Hello again ;]");		
+		System.out.println("Hello World");		
 	}
 
 }
