@@ -10,6 +10,11 @@ public class GenericsEntry {
 	public static void main(String[] args) {
 		varArgsOperation();
 		basicGenericsOperations();
+		
+		RightWithClass toArr = new RightWithClass();
+		List<String> strings = Arrays.asList("one", "two");
+		String[] a = toArr.toArray(strings, String.class);
+		System.out.println(Arrays.toString(a));
 
 	}
 
@@ -81,6 +86,7 @@ public class GenericsEntry {
 		System.out.println();
 	}
 	
+	// Perfect example on how unsafe varargs usage looks - list escapes from method body.
 	public static <T> List<T> toList(int num, T... arr){
 		List<T> list = new ArrayList<T>();
 		if(num == 1) {
@@ -91,4 +97,13 @@ public class GenericsEntry {
 		return list;
 	}
 
+	//Generic approach on creating array from collection
+	static class RightWithClass {
+		  public <T> T[] toArray(Collection<T> c, Class<T> k) {
+		    T[] a = (T[])java.lang.reflect.Array.  // unchecked cast
+		            newInstance(k, c.size());
+		    int i=0; for (T x : c) a[i++] = x;
+		    return a;
+		  }
+		}
 }

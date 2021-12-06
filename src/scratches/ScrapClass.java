@@ -15,11 +15,25 @@ public class ScrapClass {
 		System.out.println(matrix);
 		
 		Integer i = 5;
-		List<Integer> list = Collections.singletonList(i);
+		List<Integer> list = new ArrayList<>();
+		list.add(3);//Collections.singletonList(i);
 		//list.add(1);
-		i = 10;
+		String ii = "maslo:";
 		System.out.println(list);
-		
+		change(list);
+		System.out.println(list.toString());
+		maxSimilarity(new ArrayList<Integer>(), new ArrayList<ArrayList<Integer>>());
+	}
+
+	private static void change(List<Integer> list) {
+		list.add(5);
+		list = new ArrayList<>();
+		list.add(2);
 	}                   
 
+	public static <T> int maxSimilarity(ArrayList<T> g, ArrayList<? extends ArrayList<T>> gs) {
+		System.out.println("Dzialam");
+		return 0;
+		
+	}
 }

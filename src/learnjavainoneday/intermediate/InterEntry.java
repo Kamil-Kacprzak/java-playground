@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import learnjavainoneday.beginning.FileTesting;
 
-public class OopEntry { // only public (or no modifier), abstract and final modifiers allowed 
+public class InterEntry { // only public (or no modifier), abstract and final modifiers allowed 
 						// in general class
 /*
  * 			Access Levels
