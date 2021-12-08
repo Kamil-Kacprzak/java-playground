@@ -13,8 +13,8 @@ Modifier	Class	Package	Subclass	World	|
 -----------|------------------------------------|
 public	   |  Y			Y		Y			Y	|
 protected  |  Y			Y		Y			N	|
-no modifier|  Y 		Y		N			N	| // not used for fields and methods within interface
-private	   |  Y			N		N			N	|
+no modifier|  Y 		Y		N			N	| // not used for fields and methods within interface. 
+private	   |  Y			N		N			N	| // methods are public, fields public static and final
 ------------------------------------------------|
 
  */
@@ -25,7 +25,7 @@ private	   |  Y			N		N			N	|
 	// Using class with main and calling new object with
 	// it's own constructor
 	public static void main(String[] args) {
-		// new OopEntry();
+		// new InterEntry(); // In order to call non static methods we need to instantiate new object
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Choose your option:\n1 - TestingClass entry\n2 - Abstract & Interface\n0 - Exit");
 		System.out.print("Your input: ");
@@ -40,7 +40,7 @@ private	   |  Y			N		N			N	|
 				new TestingAccessClass();	
 				break;
 			case 2:
-				IfceAbstractClassUser user = new IfceAbstractClassUser();
+				IfAbstractClassUser user = new IfAbstractClassUser();
 				user.calculateNumber();
 				user.returnNumber();
 				user.someDefaultMethod();

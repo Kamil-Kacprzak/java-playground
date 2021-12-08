@@ -1,8 +1,13 @@
 package scratches;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class ScrapClass {
 
@@ -23,6 +28,27 @@ public class ScrapClass {
 		change(list);
 		System.out.println(list.toString());
 		maxSimilarity(new ArrayList<Integer>(), new ArrayList<ArrayList<Integer>>());
+		int __$12 = 12;
+		if(__$12 == 10) {
+			System.out.println(__$12);
+		}
+	//	long l = 20_000_000_000; compilation error
+		long ll = 20_000_000_000L;
+		System.out.println(ll);
+		
+//		Scanner sc = new Scanner(System.in);
+//		sc.useDelimiter("\n");
+//		int a1 = sc.nextInt();
+//		System.out.println(a1);
+		
+		try (BufferedWriter out = new BufferedWriter(new FileWriter(new File("./src/learnjavainoneday/beginning","output.txt")))){
+			out.write("otwarte");
+			out.newLine();
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		
+		
 	}
 
 	private static void change(List<Integer> list) {

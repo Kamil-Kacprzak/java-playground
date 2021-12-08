@@ -50,7 +50,7 @@ public class BeginningEntry {
 		System.out.println("L: "+l);
 		n = 0;
 
-		// Declare and initialize array separately in short syntax - not allowed
+		// Declare and initialize array separately in short syntax is not allowed
 		int[] shortVersion = {3,2,1,0};
 		int[] intArray;
 		intArray = new int[] {3,2,1,0}; 

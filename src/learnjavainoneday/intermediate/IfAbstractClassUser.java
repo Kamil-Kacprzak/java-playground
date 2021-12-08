@@ -1,6 +1,6 @@
 package learnjavainoneday.intermediate;
 
-public class IfceAbstractClassUser extends AbstractClass
+public class IfAbstractClassUser extends AbstractClass
 					implements TrialInterface{
 
 	//Default constructor
